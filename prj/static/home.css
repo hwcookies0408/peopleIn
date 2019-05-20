@@ -1,0 +1,44 @@
+  div#content_home {
+      position: absolute;
+      top: 80px;
+      height: 1300px;
+      left: 50px;
+      right: 50px;
+      text-align: center;
+  }
+
+
+  section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+  /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.btn {color: black; background-color: whitesmoke;}
+#buttonimg{width:40px; height:40px;}
+
+.footer2 {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /*color: white;*/
+   text-align: center;
+    background-color: whitesmoke;
+}
+
+
+.jimg {width: 360px; height: auto;}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>     <!--HTML5 규약을 준수하는 파일-->
+  <html lang="ko">    <!--언어는 한국어로 지정--><!---->
+
+  <head>              <!--페이지 타이틀과 css 파일 2개를 연결-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>피플 In</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Custom stylesheet - for your changes-->
+  {% load staticfiles %} <!--정적 파일인 css 연결하기 위하여, staticfiles를 로드-->
+  <!--스타일시트 css/base.css 작성이 필요함-->
+  <link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static 'base.css' %}{% endblock %}" />
+  <link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}" />
+  <link rel="shortcut icon" href="{% static '로고.ico' %}">
+
+  <script>
+
+  </script>
+  </head>
+
+
+  <body>              <!--바디 영역은 4 영역(헤더/메뉴/콘텐츠/풋터)으로 구성-->
+<!-- navbar-->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top shadow-sm bg-white">
+    <a href="{% url 'index' %}"> <img src="{% static '햄버튼.png' %}" width="40px" height="40px"></a>
+  <a href="{% url 'index' %}" class="navbar-brand">
+    <img src="{% static '록오록오.png' %}" style="max-width: 120px; max-height: 100px;" align="center"/>
+  </a>
+
+</nav>
+
+
+
+  {% block content %}{% endblock %}   <!--블록 태그로 콘텐츠 영역 정의 -->
+
+  {% block footer %}{% endblock %}    <!--블록 태그로 풋터 영역 정의-->
+
+  </body>
+  </html>

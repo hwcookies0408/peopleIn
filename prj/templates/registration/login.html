@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}로그인{% endblock %}
+{% load staticfiles %}
+{% block extrastyle %}{% static "forms.css" %}{% endblock %}
+
+{% block content %}
+
+<br><br><br><br>
+
+<span id="content">
+{#  <h1 class="h3 mb-3 font-weight-normal">로그인</h1>#}
+  <form class="form-signin" action="." method="post">{% csrf_token %} <!-- {% csrf_token %} 해킹을 막음 -->
+    {% if form.errors %}
+      <p class="errornote">아이디 또는 비밀번호를 다시 확인하세요.</br>
+      등록되지 않은 아이디이거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.</p>
+    {% endif %}
+{#      <p>아이디와 비밀번호를 알려 주세요.</p>#}
+  <div class="loginform">
+      <img class="logologin" src="{% static '로고.png' %}">
+      <div class="loginformgroup">
+          <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+          </div>
+          <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+          </div>
+          <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">로그인</button>
+          </div>
+      </div>
+  </div>
+    <!-- 자바스크립트 활용 -->
+    <script type="text/javascript">document.getElementById('id_username').focus();</script>
+  </form>
+
+  <hr/>
+&nbsp;&nbsp; <span class="exfun">아이디찾기</span>|&nbsp;<span class="exfun">비밀번호찾기 </span>&nbsp;|
+  <a href="{% url 'register' %}"><span class="exfun2">회원가입</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{#    <div class="pp">#}
+{#        <p>아이디 찾기</p><p>비밀번호 찾기</p><p>회원가입</p>#}
+{#    </div>#}
+</div>
+</span>
+{% endblock %}

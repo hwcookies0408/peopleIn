@@ -1,0 +1,159 @@
+/* Form Error */
+.error-note {
+    display: block;
+    width: 330px;
+    margin: 5px auto;
+    border: 1px solid #c30;
+    background: white;
+    padding: 10px 25px;
+    color: #c30;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Authentication Forms */
+fieldset {
+    border: 1px solid #ccc;
+}
+.aligned label {
+    float: left;
+    /*width: 170px;*/
+    padding: 3px 10px 0 0;
+}
+.form-row {
+    padding: 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+}
+.submit-row {
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    text-align: right;
+}
+.submit-row input {
+    margin: 10px;
+    background: #ffc;
+}
+
+body {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 200px;
+    background-color: #f5f5f5;
+    margin: auto;
+}
+
+/* 회원가입 폼 csss */
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+/* 회원가입 폼 csss */
+
+.form-signup {
+  width: 100%;
+
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signup .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+div#content {
+    margin: 0 20%;
+    left: 0px;
+}
+
+.aligned {
+    width: 330px;
+    margin: auto;
+}
+
+
+.submit-row {
+    width: 330px;
+    margin: auto;
+}
+
+.submit-row2 {
+    width: 400px;
+    margin: auto;
+}
+
+
+.aligned2 {
+    width: 400px;
+    margin: auto;
+}
+
+.form-pw-change {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-pw-change .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+/*로그인*/
+
+.form-signin{
+    height: 385px;
+}
+
+.loginform {
+    width: 310px;
+    position: relative;
+}
+
+
+.logologin {
+    width:310px;
+}
+
+.loginformgroup{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    bottom: -4.7em;
+}
+
+.btn-primary {
+    background-color: #618C03;
+    border-color: #618C03;
+}
+
+hr { color:black;width: 310px;}
+
+.exfun {
+    width:93px;
+    display:inline-block;
+    text-align: center;
+    font-size: 15px;
+}
+
+.exfun2 { font-size: 15px;   width: 90px; }
