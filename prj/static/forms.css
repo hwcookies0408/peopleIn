@@ -1,12 +1,13 @@
 /* Form Error */
-.error-note {
+.errornote {
     display: block;
-    width: 330px;
+    /*width: 330px;*/
     margin: 5px auto;
-    border: 1px solid #c30;
-    background: white;
-    padding: 10px 25px;
-    color: #c30;
+    /*border: 1px solid #c30;*/
+    /*background: white;*/
+    /*padding: 10px 25px;*/
+    /*color: #c30;*/
+    color: darkred;
     font-size: 15px;
     font-weight: bold;
 }
@@ -139,7 +140,7 @@ div#content {
     position: absolute;
     width: 300px;
     left: 0;
-    bottom: -4.7em;
+    bottom: -8em;
 }
 
 .btn-primary {
@@ -157,3 +158,43 @@ hr { color:black;width: 310px;}
 }
 
 .exfun2 { font-size: 15px;   width: 90px; }
+
+
+/* 회원가입 */
+.form-signup {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signup .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signup{
+    height: 385px;
+}
+
+.signupform {
+    width: 310px;
+    position: relative;
+}
+
+
+.signupformgroup{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    bottom: -17em;
+}
+
+.btn-primary {
+    background-color: #618C03;
+    border-color: #618C03;
+}
+
