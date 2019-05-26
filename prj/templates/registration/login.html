@@ -12,6 +12,8 @@
   <form class="form-signin" action="." method="post">{% csrf_token %} <!-- {% csrf_token %} 해킹을 막음 -->
       {% if form.errors %}
         <p class="errornote">아이디 또는 비밀번호를 다시 확인하세요.</p><br>
+{#      {% elif user.is_anonymous %}#}
+{#        <p class="errornote">접근 권한이 없습니다.</p><br>#}
       {% endif %}
 {#      <p>아이디와 비밀번호를 알려 주세요.</p>#}
   <div class="loginform">

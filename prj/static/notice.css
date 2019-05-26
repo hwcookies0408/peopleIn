@@ -1,0 +1,42 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 200px;
+    margin: auto;
+}
+
+
+div.board_header{
+    position: relative;
+    background: #618c03;
+    height: 35px;
+    text-decoration: none;
+    /*line-height: 35px;*/
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.a_header:link, .a_header:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.notice {
+    background-color: white;
+    padding-top: 0px;
+}
+.title-wrap {
+    border-bottom: 1px solid #DDD;
+    position: relative;
+    padding: 10px 10px 10px 60px;
+    display: block;
+}
+
+.content-wrap{
+    display: block;
+    font-family: 'Exo 2', sans-serif;
+    margin: 30px 15px;
+    line-height: 1.4;
+    overflow: hidden;
+
+}

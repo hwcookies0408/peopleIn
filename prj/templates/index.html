@@ -45,23 +45,23 @@
     </div>
 </span>
 <span>
-    <div style="text-align: center">
-        <hr>
+    <div class="notice_header" onclick="location.href='{% url 'notice:notice_list' %}'">
+{#        <hr>#}
+{#        <h5>공지사항</h5>#}
+{#        <hr>#}
         <h5>공지사항</h5>
-        <hr>
     </div>
-    <ul>
-        <li><p>어쩌구저쩌구</p></li>
-        <li><p>4월 가입자 통계</p></li>
-        <li><p>이용약관 변경 안내</p></li>
+    <ul style="list-style:none;padding-left: 1px; height:100px;">
+{#            <hr>#}
+        {% for notice in notice_list %}
+            <li><p><a href="{% url 'notice:notice_detail' pk=notice.id %}">&nbsp;{{ notice.title }}</a></p></li><hr>
+        {% endfor %}
     </ul>
 
-    <div style="text-align: center">
-        <hr>
+    <div class="notice_header">
         <h5>프랜차이즈 창업 현황</h5>
-        <hr>
     </div>
-    <img class="jimg" src="{% static '프차.png' %}">
+    <img style="width:100%" src="{% static '프차.png' %}">
 </span>
 
 
@@ -73,6 +73,8 @@
             <strong>{% firstof user.get_short_name user.get_username %}</strong>&nbsp;&nbsp;
             <a href="{% url 'password_change' %}">비밀번호 변경</a>&nbsp;&nbsp;
             <a href="{% url 'logout' %}">로그아웃</a>
+            <a href="{% url 'map:map_index' %}">지도</a>
+
         </h4>
     {% else %}
         <h4 class="welcome">
@@ -83,7 +85,6 @@
     {% endif %}
 </div>
 </section>
-
 
 
 {% endblock %}

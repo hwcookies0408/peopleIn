@@ -5,9 +5,16 @@ from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
 
+from notice.models import Notice
+
 
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(IndexView, self).get_context_data(**kwargs)
+        context['notice_list'] = Notice.objects.order_by('-created_at')[:4]
+        return context
 
 
 # 계정 등록                                         ch11 2/2
@@ -27,3 +34,4 @@ class LoginRequiredMixin(object):
     view = super(LoginRequiredMixin, cls).as_view(**initkwargs)
     return login_required(view
                           )
+

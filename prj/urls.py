@@ -3,7 +3,7 @@ from django.urls import path, include, re_path
 from django.conf import settings                         # 추가 1
 from django.conf.urls.static import static
 
-from prj.views import UserCreateView, UserCreateDoneTV
+from .views import UserCreateView, UserCreateDoneTV
 from . import views
 
 
@@ -15,7 +15,9 @@ urlpatterns = [
     re_path(r'^accounts/register/done/$', UserCreateDoneTV.as_view(), name='register_done'),
     path('admin/', admin.site.urls),
     path('', views.IndexView.as_view(), name='index'),
-    path('map/', include('map.urls'))
+    path('map/', include('map.urls')),
+    path('notice/', include('notice.urls')),
+
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:                                       # 추가 2
     import debug_toolbar                                 # 추가 2

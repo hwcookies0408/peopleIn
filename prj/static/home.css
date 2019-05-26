@@ -40,5 +40,23 @@ body {
     background-color: whitesmoke;
 }
 
+/* 인덱스 공지사항
+-------------------------------------------------- */
 
-.jimg {width: 360px; height: auto;}
+.notice_header{
+    margin: 10px 0 10px 0;
+    text-align: center;
+    background-color: #ffffff;
+    height:50px;
+    padding-top: 13px;
+    color: #618c03;
+    /*font-weight: bold;*/
+    opacity: 0.9;
+    border-top:  1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+hr, p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

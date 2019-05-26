@@ -1,0 +1,14 @@
+{% extends "../base.html" %}                   <!--base.html을 상속받는다고 선언-->
+{% block title %}
+    {{ block.super }} notice
+{% endblock %}
+{% block extra_head %}
+    <style>
+        {# notice 관련 템플릿에만 적용할 CSS 정의 혹은 연결 #}
+    </style>
+{% endblock %}
+{% block extra_body %}
+    <script>
+        {# notice 관련 템플릿에만 적용할 JS 정의 혹은 연결 #}
+    </script>
+{% endblock %}

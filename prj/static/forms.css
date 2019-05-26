@@ -65,7 +65,6 @@ body {
 
 .form-signup {
   width: 100%;
-
   padding: 15px;
   margin: auto;
 }
@@ -166,31 +165,27 @@ hr { color:black;width: 310px;}
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  height: 700px;
+    text-align: left;
+    font-weight: bold;
 }
 
 .form-signup .form-control {
-  position: relative;
   box-sizing: border-box;
-  height: auto;
+  height: 38px;
   padding: 10px;
   font-size: 16px;
 }
 
-.form-signup{
-    height: 385px;
-}
 
 .signupform {
     width: 310px;
-    position: relative;
 }
 
 
 .signupformgroup{
-    position: absolute;
     width: 300px;
     left: 0;
-    bottom: -17em;
 }
 
 .btn-primary {
