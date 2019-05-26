@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecf6102c-9b1c-4c9d-bd1c-09eb58d735f5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/PeopleIn (2).zip" afterPath="$PROJECT_DIR$/PeopleIn (2).zip" />
-      <change beforePath="$PROJECT_DIR$/PeopleIn (3).zip" afterPath="$PROJECT_DIR$/PeopleIn (3).zip" />
-      <change beforePath="$PROJECT_DIR$/PeopleIn.zip" afterPath="$PROJECT_DIR$/PeopleIn.zip" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/map/views.py" afterPath="$PROJECT_DIR$/map/views.py" />
-      <change beforePath="$PROJECT_DIR$/prj/settings.py" afterPath="$PROJECT_DIR$/prj/settings.py" />
-      <change beforePath="$PROJECT_DIR$/prj/static/forms.css" afterPath="$PROJECT_DIR$/prj/static/forms.css" />
-      <change beforePath="$PROJECT_DIR$/prj/static/home.css" afterPath="$PROJECT_DIR$/prj/static/home.css" />
-      <change beforePath="$PROJECT_DIR$/prj/templates/index.html" afterPath="$PROJECT_DIR$/prj/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/prj/templates/registration/login.html" afterPath="$PROJECT_DIR$/prj/templates/registration/login.html" />
-      <change beforePath="$PROJECT_DIR$/prj/templates/registration/register.html" afterPath="$PROJECT_DIR$/prj/templates/registration/register.html" />
-      <change beforePath="$PROJECT_DIR$/prj/urls.py" afterPath="$PROJECT_DIR$/prj/urls.py" />
-      <change beforePath="$PROJECT_DIR$/prj/views.py" afterPath="$PROJECT_DIR$/prj/views.py" />
-      <change beforePath="$PROJECT_DIR$/users/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/users/apps.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/userExtends/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="669">
-              <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+              <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
               <folding>
                 <element signature="e#938#970#0" expanded="true" />
               </folding>
@@ -63,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/userExtends/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -756,7 +735,7 @@
     <entry file="file://$PROJECT_DIR$/userExtends/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
-          <caret line="53" column="43" lean-forward="true" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
           <folding>
             <element signature="e#938#970#0" expanded="true" />
           </folding>
@@ -766,7 +745,7 @@
     <entry file="file://$PROJECT_DIR$/userExtends/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
