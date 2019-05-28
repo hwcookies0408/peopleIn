@@ -17,8 +17,8 @@ class Notice(models.Model):
         related_name='notice',
         verbose_name='게시자',
     )
-    title = models.CharField('제목', max_length=100)
-    content = models.TextField('내용')
+    title = models.CharField('제목', max_length=100, null=False)
+    content = models.TextField('내용', null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     photo = models.ImageField(blank=True)
     hit = models.PositiveIntegerField(default=0)

@@ -25,25 +25,11 @@ class Profile(models.Model):
         (SONGPA, '송파구')
     )
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    birthdate = models.DateField(null=True, blank=True)
-    in_area = models.PositiveSmallIntegerField(choices=AREA_CHOICES, null=True, blank=True)
+    birthdate = models.DateField(null=True, blank=True, verbose_name='birthdate')
+    in_area = models.PositiveSmallIntegerField(choices=AREA_CHOICES, null=True, blank=True, verbose_name='in_area')
     # in_job = models.CharField(max_length=10, verbose_name='관심업종')
-    # phone = models.CharField(max_length=20, null=False, blank=False, unique=True)
+    phone = models.CharField(max_length=20, null=True, verbose_name='phone')
 
-
-# class Profile(models.Model):
-#     STUDENT = 1
-#     TEACHER = 2
-#     SUPERVISOR = 3
-#     ROLE_CHOICES = (
-#         (STUDENT, 'Student'),
-#         (TEACHER, 'Teacher'),
-#         (SUPERVISOR, 'Supervisor'),
-#     )
-#     user = models.OneToOneField(User, on_delete=models.CASCADE)
-#     location = models.CharField(max_length=30, blank=True)
-#     birthdate = models.DateField(null=True, blank=True)
-#     role = models.PositiveSmallIntegerField(choices=ROLE_CHOICES, null=True, blank=True)
 
     class Meta:
         verbose_name = 'profile'

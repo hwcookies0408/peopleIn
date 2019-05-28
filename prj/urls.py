@@ -17,6 +17,7 @@ urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
     path('map/', include('map.urls')),
     path('notice/', include('notice.urls')),
+    path('analysis/', include('analysis.urls')),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:                                       # 추가 2

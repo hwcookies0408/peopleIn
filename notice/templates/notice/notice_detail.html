@@ -23,7 +23,7 @@
             <div class="under-title" style="font-size: 13px;">
                 <span class="name el nName">{{ notice.author }}	</span>
                 <span class="l">|</span>
-                <span class="date el">{{ notice.created_at }}</span>
+                <span class="date el">{{ notice.created_at|date:"Y-m-d h:s" }}</span>
                 <span class="l">|</span>
     			<span class="">{{ notice.update_counter }}</span>
             </div>
@@ -34,6 +34,10 @@
 
         <div class="document_1102807111_0 xe_content">
             {{ notice.content|linebreaksbr  }}
+        <br><br>
+            {% if notice.photo %}
+                <img src="{{ notice.photo.url }}" style="width:330px; height:auto">
+            {% endif %}
         </div>
 
     </article>

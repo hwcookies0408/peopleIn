@@ -40,3 +40,40 @@ div.board_header{
     overflow: hidden;
 
 }
+
+.writer-btn {
+    float:right; width: 100px; margin-right: 10px;
+}
+
+
+.writer {
+    width:100%;
+    padding-top:0rem;
+}
+
+.inputwriter{
+    width: 100%;
+    padding: 0px;
+    height:40px;
+    border-left: none;
+    border-right: none;
+}
+
+.writerbtn{
+    width: 49%;
+    float: left;
+    text-align: center;
+
+}
+
+
+.btn-primary {
+    background-color: #618C03;
+    border-color: #618C03;
+}
+
+.bt-wrap {
+    padding: 8px;
+    text-align: center;
+}
+

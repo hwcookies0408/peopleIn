@@ -46,10 +46,12 @@ body {
 .notice_header{
     margin: 10px 0 10px 0;
     text-align: center;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-color: #618c03;
     height:50px;
     padding-top: 13px;
-    color: #618c03;
+    /*color: #618c03;*/
+    color: #fff;
     /*font-weight: bold;*/
     opacity: 0.9;
     border-top:  1px solid lightgrey;

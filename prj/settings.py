@@ -22,6 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ih$r)e0(ucs09wu4v@1s!$z==9iph$$7x_2)a==)d66hjor%(_'
+ACCOUNT_SECURITY_API_KEY='AC240156467d4a12dcc801a22549297590'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,6 +43,8 @@ INSTALLED_APPS = [
     'map',
     'notice',
     'userExtends',
+    'analysis',
+    'import_export',
 ]
 
 MIDDLEWARE = [

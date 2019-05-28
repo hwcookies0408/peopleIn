@@ -13,6 +13,8 @@
         </a>
         </span>
 </div>
+
+
 <section style="padding-top: 0.5rem;">
 
     {% for notice in notice_list %}
@@ -25,7 +27,46 @@
 
         <hr style="margin-top: 0.5rem;  margin-bottom: 0.5rem;">
    {% endfor %}
+ {% if request.user.is_superuser %}
+    <button type="submit" class="btn btn-primary btn-block writer-btn">
+        <a href="{% url 'notice:new_feed' %}" style="color:#fff">글쓰기</a>
+    </button>
+{% endif %}
+
+
 
 </section>
+
+    <nav aria-label="Page navigation">
+    <ul class="pagination">
+      {% if page_obj.has_previous %}
+        <li>
+          <a href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+      {% else %}
+        <li class="disabled"><span>&laquo;</span></li>
+      {% endif %}
+
+      {% for i in page_range %}
+        {% if page_obj.number == i %}
+          <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+        {% else %}
+          <li><a href="?page={{ i }}">{{ i }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <li>
+          <a href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      {% else %}
+        <li class="disabled"><span>&raquo;</span></li>
+      {% endif %}
+    </ul>
+  </nav>
 
 {% endblock %}

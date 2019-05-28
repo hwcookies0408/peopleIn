@@ -1,0 +1,30 @@
+{% extends "../base.html" %}                   <!--base.html을 상속받는다고 선언-->
+{% block title %}{{ notice.title }}{% endblock %}
+{% load staticfiles %}
+{% block extrastyle %}{% static "notice.css" %}{% endblock %}
+{% block content %}
+
+<div class="board_header">
+
+		<span class="favorite_button favorites_24761 active" onclick="location.href='{% url 'notice:notice_list' %}'">
+{#            <i class="fas"></i></span>#}
+        <a class="a_header" href="{% url 'notice:notice_list' %}">
+            <span class="browser_title">공지사항</span>
+        </a>
+        </span>
+</div>
+
+<section class="writer">
+    <form method="POST">
+        {% csrf_token %}
+{#        <h3>게시물 올리기</h3>#}
+        <input type="text" class="inputwriter" placeholder="제목" name="title"><br>
+        <textarea class="inputwriter" placeholder="내용" name="content" style="height: 300px; margin-bottom: 20px;"></textarea><br>
+        <div class="bt-wrap clearfix bt-wrap-full">
+            <button type="submit" class="btn  btn-block login-btn writerbtn" style="margin-top: 0px;">
+                <a href="javascript:history.back()" class="btCancel">취소</a></button>
+            <button type="submit" class="btn btn-primary  btn-block login-btn writerbtn" style="margin-top: 0px; margin-left:6px;">등록</button>
+        </div>
+    </form>
+</section>
+{% endblock %}
