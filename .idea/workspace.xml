@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecf6102c-9b1c-4c9d-bd1c-09eb58d735f5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/notice/models.py" afterPath="$PROJECT_DIR$/notice/models.py" />
-      <change beforePath="$PROJECT_DIR$/notice/templates/notice/notice_detail.html" afterPath="$PROJECT_DIR$/notice/templates/notice/notice_detail.html" />
-      <change beforePath="$PROJECT_DIR$/notice/templates/notice/notice_list.html" afterPath="$PROJECT_DIR$/notice/templates/notice/notice_list.html" />
-      <change beforePath="$PROJECT_DIR$/notice/urls.py" afterPath="$PROJECT_DIR$/notice/urls.py" />
-      <change beforePath="$PROJECT_DIR$/notice/views.py" afterPath="$PROJECT_DIR$/notice/views.py" />
-      <change beforePath="$PROJECT_DIR$/prj/settings.py" afterPath="$PROJECT_DIR$/prj/settings.py" />
-      <change beforePath="$PROJECT_DIR$/prj/static/home.css" afterPath="$PROJECT_DIR$/prj/static/home.css" />
-      <change beforePath="$PROJECT_DIR$/prj/static/notice.css" afterPath="$PROJECT_DIR$/prj/static/notice.css" />
-      <change beforePath="$PROJECT_DIR$/prj/templates/registration/register.html" afterPath="$PROJECT_DIR$/prj/templates/registration/register.html" />
-      <change beforePath="$PROJECT_DIR$/prj/urls.py" afterPath="$PROJECT_DIR$/prj/urls.py" />
-      <change beforePath="$PROJECT_DIR$/userExtends/models.py" afterPath="$PROJECT_DIR$/userExtends/models.py" />
-    </list>
+    <list default="true" id="ecf6102c-9b1c-4c9d-bd1c-09eb58d735f5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/analysis/apps.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/analysis/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/analysis/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -678,7 +664,7 @@
     <entry file="file://$PROJECT_DIR$/analysis/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -686,7 +672,7 @@
     <entry file="file://$PROJECT_DIR$/analysis/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -694,7 +680,7 @@
     <entry file="file://$PROJECT_DIR$/analysis/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
