@@ -1,7 +1,12 @@
 from django.contrib.auth import get_user_model
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
+from django.urls import reverse_lazy
+from django.views import generic
 
-from .forms import PostForm
+from userExtends.models import Profile
+from .forms import CreatePostForm
 from .models import Notice
 
 from django.views.generic import ListView, DetailView, TemplateView
@@ -32,8 +37,8 @@ def new_feed(request):
 
     return render(request, 'notice/new_feed.html')
 
-#  paginated_by = 3 # 한 페이지 목록에 표시 게시물 수 (단 한 줄로 페이지네이션이 구현됨)
-#
+ # paginated_by = 3 # 한 페이지 목록에 표시 게시물 수 (단 한 줄로 페이지네이션이 구현됨)
+
 # def get_context_data(self, **kwargs):
 #     context = super(PostListView, self).get_context_data(**kwargs)
 #
@@ -51,3 +56,58 @@ class PostLV(ListView) :
 
 class PostDV(DetailView) :
     model = Notice
+
+# *******************************************************************************8888888
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def post_write(request):
+#     if request.method == 'POST':
+#         form = CreatePostForm(request.POST)
+#
+#         if form.is_valid():
+#             conn_user = request.user
+#             conn_profile = Profile.objects.get(user=conn_user)
+#             username = conn_profile.username
+#
+#             new_post = form.save(commit=False)
+#             new_post.author = username
+#             new_post.save()
+#
+#             return render(request,'notice/notice_list.html', {'form' : form})
+#         else:
+#             form = CreatePostForm()
+#
+#         return render(request, 'notice/notice_list.html', {'form': form})
+
+# class PostDeleteView(LoginRequiredMixin, generic.DeleteView):
+#     model = Notice
+#     success_url = reverse_lazy('notice_list')
+#
+#     def get_queryset(self):
+#         conn_user = self.request.author
+#         author = get_author(conn_user)
+#         return self.model.objects.filter(writer=author)
