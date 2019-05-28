@@ -11,12 +11,12 @@ def local_time(input_time):
 
 
 class Notice(models.Model):
-    author = models.ForeignKey(
-        settings.AUTH_USER_MODEL,  # 'auth.User'라고 쓰는 것보다 강추
-        on_delete=models.CASCADE,
-        related_name='notice',
-        verbose_name='게시자',
-    )
+    # author = models.ForeignKey(
+    #     settings.AUTH_USER_MODEL,  # 'auth.User'라고 쓰는 것보다 강추
+    #     on_delete=models.CASCADE,
+    #     related_name='notice',
+    #     verbose_name='게시자',
+    # )
     title = models.CharField('제목', max_length=100, null=False)
     content = models.TextField('내용', null=False)
     created_at = models.DateTimeField(auto_now_add=True)

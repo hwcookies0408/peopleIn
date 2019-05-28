@@ -23,13 +23,13 @@
                 <span class="l" style="font-size: 13px;">|</span>
                 <span class="name el nName" style="font-size: 13px;">{{ notice.created_at|date:"Y-m-d" }}</span>
                 <span class="l" style="font-size: 13px;">|</span>
-                <span class="name el nName" style="font-size: 13px;">{{ notice.author }}	</span>
+{#                <span class="name el nName" style="font-size: 13px;">{{ notice.author }}	</span>#}
 
         <hr style="margin-top: 0.5rem;  margin-bottom: 0.5rem;">
    {% endfor %}
  {% if request.user.is_superuser %}
     <button type="submit" class="btn btn-primary btn-block writer-btn">
-        <a href="{% url 'notice:new_feed' %}" style="color:#fff">글쓰기</a>
+        <a href="{% url 'notice:post_list' %}" style="color:#fff">글쓰기</a>
     </button>
 {% endif %}
 

@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ecf6102c-9b1c-4c9d-bd1c-09eb58d735f5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/notice/admin.py" afterPath="$PROJECT_DIR$/notice/admin.py" />
+      <change beforePath="$PROJECT_DIR$/notice/models.py" afterPath="$PROJECT_DIR$/notice/models.py" />
+      <change beforePath="$PROJECT_DIR$/notice/templates/notice/new_feed.html" afterPath="$PROJECT_DIR$/notice/templates/notice/new_feed.html" />
+      <change beforePath="$PROJECT_DIR$/notice/templates/notice/notice_detail.html" afterPath="$PROJECT_DIR$/notice/templates/notice/notice_detail.html" />
+      <change beforePath="$PROJECT_DIR$/notice/templates/notice/notice_list.html" afterPath="$PROJECT_DIR$/notice/templates/notice/notice_list.html" />
+      <change beforePath="$PROJECT_DIR$/notice/views.py" afterPath="$PROJECT_DIR$/notice/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +26,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notice/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="-503">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -28,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notice/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="279">
+              <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="28" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -60,24 +67,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notice/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notice_list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notice_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notice/templates/notice/notice_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="241">
+              <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#button#0;n#section#0;n#!!top" expanded="true" />
+                <marker date="1559027447534" expanded="false" signature="1161:1177" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,9 +83,11 @@
       <file leaf-file-name="new_feed.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notice/templates/notice/new_feed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="8" column="94" lean-forward="false" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
-              <folding />
+            <state relative-caret-position="149">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#1262#1303#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +105,8 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notice/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="299">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -115,8 +115,8 @@
       <file leaf-file-name="notice_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notice/templates/notice/notice_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-249">
-              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="-203">
+              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -135,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>아이디와</find>
       <find>login</find>
       <find>template</find>
       <find>all</find>
@@ -163,8 +162,9 @@
       <find>postform</find>
       <find>new</find>
       <find>'</find>
-      <find>wirte</find>
       <find>write</find>
+      <find>wirte</find>
+      <find>author</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,7 +189,6 @@
         <option value="$PROJECT_DIR$/prj/core/apps.py" />
         <option value="$PROJECT_DIR$/notice/templates/notice/layout.html" />
         <option value="$PROJECT_DIR$/map/admin.py" />
-        <option value="$PROJECT_DIR$/notice/admin.py" />
         <option value="$PROJECT_DIR$/prj/static/forms.css" />
         <option value="$PROJECT_DIR$/map/views.py" />
         <option value="$PROJECT_DIR$/prj/templates/registration/login.html" />
@@ -208,7 +207,6 @@
         <option value="$PROJECT_DIR$/userExtends/models.py" />
         <option value="$PROJECT_DIR$/prj/views.py" />
         <option value="$PROJECT_DIR$/prj/static/notice.css" />
-        <option value="$PROJECT_DIR$/notice/templates/notice/new_feed.html" />
         <option value="$PROJECT_DIR$/prj/static/home.css" />
         <option value="$PROJECT_DIR$/prj/urls.py" />
         <option value="$PROJECT_DIR$/analysis/apps.py" />
@@ -218,12 +216,14 @@
         <option value="$PROJECT_DIR$/analysis/models.py" />
         <option value="$PROJECT_DIR$/analysis/admin.py" />
         <option value="$PROJECT_DIR$/analysis/templates/analysis/analysis_index.html" />
-        <option value="$PROJECT_DIR$/notice/templates/notice/notice_detail.html" />
         <option value="$PROJECT_DIR$/notice/forms.py" />
-        <option value="$PROJECT_DIR$/notice/models.py" />
         <option value="$PROJECT_DIR$/notice/urls.py" />
-        <option value="$PROJECT_DIR$/notice/templates/notice/notice_list.html" />
         <option value="$PROJECT_DIR$/notice/views.py" />
+        <option value="$PROJECT_DIR$/notice/models.py" />
+        <option value="$PROJECT_DIR$/notice/templates/notice/new_feed.html" />
+        <option value="$PROJECT_DIR$/notice/admin.py" />
+        <option value="$PROJECT_DIR$/notice/templates/notice/notice_detail.html" />
+        <option value="$PROJECT_DIR$/notice/templates/notice/notice_list.html" />
       </list>
     </option>
   </component>
@@ -379,13 +379,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2366931" sideWeight="0.5064447" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45866364" sideWeight="0.4935553" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45866364" sideWeight="0.4935553" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17991407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -666,50 +667,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notice/templates/notice/notice_list.html">
+    <entry file="file://$PROJECT_DIR$/notice/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notice/templates/notice/new_feed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="8" column="94" lean-forward="false" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notice/templates/notice/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notice/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notice/templates/notice/notice_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="161">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notice/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="-503">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -724,12 +695,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notice/forms.py">
+    <entry file="file://$PROJECT_DIR$/notice/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="279">
+          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="28" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,12 +713,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notice/views.py">
+    <entry file="file://$PROJECT_DIR$/notice/templates/notice/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notice/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notice/templates/notice/notice_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notice/templates/notice/new_feed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#1262#1303#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notice/templates/notice/notice_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#button#0;n#section#0;n#!!top" expanded="true" />
+            <marker date="1559027447534" expanded="false" signature="1161:1177" ph="..." />
           </folding>
         </state>
       </provider>
