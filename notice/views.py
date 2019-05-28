@@ -36,7 +36,7 @@ def new_feed(request):
 
         # 새글 등록 끝
 
-    return render(request, 'notice/new_feed.html')
+    return render(request, 'notice/notice_list.html')
 
  # paginated_by = 3 # 한 페이지 목록에 표시 게시물 수 (단 한 줄로 페이지네이션이 구현됨)
 
