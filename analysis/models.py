@@ -68,6 +68,3 @@ class Analysis(models.Model):
 
 class People(Analysis):
     pass
-
-
-
