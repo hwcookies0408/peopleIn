@@ -8,6 +8,7 @@ body {
 div.board_header{
     position: relative;
     background: #618c03;
+    opacity: 0.9;
     height: 35px;
     text-decoration: none;
     /*line-height: 35px;*/

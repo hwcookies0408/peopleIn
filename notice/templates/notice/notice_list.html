@@ -29,7 +29,7 @@
    {% endfor %}
  {% if request.user.is_superuser %}
     <button type="submit" class="btn btn-primary btn-block writer-btn">
-        <a href="{% url 'notice:new_feed' %}" style="color:#fff">글쓰기</a>
+        <a href="{% url 'notice:notice_new' %}" style="color:#fff">글쓰기</a>
     </button>
 {% endif %}
 

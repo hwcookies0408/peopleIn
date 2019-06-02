@@ -23,6 +23,16 @@ class Notice(models.Model):
     photo = models.ImageField(blank=True)
     hit = models.PositiveIntegerField(default=0)
 
+    board_choices = (
+        ('공지사항', '공지사항'),
+        ('문의사항', '문의사항'),
+        ('프랜차이즈', '프랜차이즈'),
+        ('창업정보나누기', '창업정보나누기'),
+        ('창업계획서나누기', '창업계획서나누기')
+    )
+
+    board = models.CharField(max_length=10, choices=board_choices, default='공지사항')
+
     class Meta:
         ordering = ['-id']  # notice 객체의 기본 정렬 순서 지정
 
@@ -46,3 +56,7 @@ class Notice(models.Model):
     def get_absolute_url(self):
         # return reverse('notice:notice_detail', args=[self.pk])
         return reverse('notice:notice_detail', kwargs={'pk': self.pk}) # reverse 임포트 시켜주어야함.
+
+    def get_absolute_url2(self):
+        # return reverse('notice:notice_detail', args=[self.pk])
+        return reverse('notice:franchise_detail', kwargs={'pk': self.pk}) # reverse 임포트 시켜주어야함.

@@ -42,9 +42,19 @@
             </div>
             </article>
         </div>
-
-
-
-
 </section>
+<div class="control hidden">
+    {% if request.user.is_superuser %}
+        <button type="submit" class="btn btn-primary btn-block writer-btn">
+            <a href="{% url 'notice:notice_remove' notice.pk %}" style="color:#fff">삭제</a>
+        </button></div>
+<div class="control hidden">
+        <button type="submit" class="btn btn-primary btn-block writer-btn">
+            <a href="{% url 'notice:notice_edit' notice.pk %}" style="color:#fff">수정</a>
+        </button>
+    {% endif %}
+</div>
+
+
+
 {% endblock %}

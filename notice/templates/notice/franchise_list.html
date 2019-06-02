@@ -1,0 +1,72 @@
+{% extends "../base.html" %}                   <!--base.html을 상속받는다고 선언-->
+{% block title %}프랜차이즈{% endblock %}
+{% load staticfiles %}
+{% block extrastyle %}{% static "notice.css" %}{% endblock %}
+{% block content %}
+
+<div class="board_header">
+
+		<span class="favorite_button favorites_24761 active" onclick="location.href='{% url 'notice:franchise_list' %}'">
+{#            <i class="fas"></i></span>#}
+        <a class="a_header" href="{% url 'notice:franchise_list' %}">
+            <span class="browser_title">프랜차이즈</span>
+        </a>
+        </span>
+</div>
+
+
+<section style="padding-top: 0.5rem;">
+
+    {% for notice in franchise_list %}
+        <a style="text-decoration: none;" href="{{ notice.get_absolute_url }}"> &nbsp;&nbsp;{{ notice.title }}</a><br>
+                <span class="name el nName" style="font-size: 13px;"> &nbsp;&nbsp;조회 {{ notice.hit }}	</span>
+                <span class="l" style="font-size: 13px;">|</span>
+                <span class="name el nName" style="font-size: 13px;">{{ notice.created_at|date:"Y-m-d" }}</span>
+                <span class="l" style="font-size: 13px;">|</span>
+{#                <span class="name el nName" style="font-size: 13px;">{{ notice.author }}	</span>#}
+
+        <hr style="margin-top: 0.5rem;  margin-bottom: 0.5rem;">
+   {% endfor %}
+ {% if request.user.is_superuser %}
+    <button type="submit" class="btn btn-primary btn-block writer-btn">
+        <a href="{% url 'notice:franchise_new' %}" style="color:#fff">글쓰기</a>
+    </button>
+{% endif %}
+
+
+
+</section>
+
+    <nav aria-label="Page navigation">
+    <ul class="pagination">
+      {% if page_obj.has_previous %}
+        <li>
+          <a href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+      {% else %}
+        <li class="disabled"><span>&laquo;</span></li>
+      {% endif %}
+
+      {% for i in page_range %}
+        {% if page_obj.number == i %}
+          <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+        {% else %}
+          <li><a href="?page={{ i }}">{{ i }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <li>
+          <a href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      {% else %}
+        <li class="disabled"><span>&raquo;</span></li>
+      {% endif %}
+    </ul>
+  </nav>
+
+{% endblock %}
