@@ -19,4 +19,5 @@ urlpatterns = [
     path('franchise/edit/<int:pk>/', views.franchise_edit, name='franchise_edit'),  # 수정
 
     path('like/', views.like_notice, name='like_notice'),
+
 ]
