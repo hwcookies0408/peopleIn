@@ -8,12 +8,21 @@ from django.contrib.auth.decorators import login_required
 from notice.models import Notice
 
 
+# class IndexView(TemplateView):
+#     template_name = 'index.html'
+#
+#     def get_context_data(self, **kwargs):
+#         context = super(IndexView, self).get_context_data(**kwargs)
+#         context['notice_list'] = Notice.objects.order_by('-created_at')[:4]
+#         return context
+
 class IndexView(TemplateView):
     template_name = 'index.html'
 
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
-        context['notice_list'] = Notice.objects.order_by('-created_at')[:4]
+        context['notice_list'] = Notice.objects.filter(board__contains='공지사항').order_by('-created_at')[:4]
+        context['franchise_list'] = Notice.objects.filter(board__contains='프랜차이즈').order_by('id')[:4]
         return context
 
 

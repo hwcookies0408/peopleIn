@@ -9,19 +9,20 @@
 		<span class="favorite_button favorites_24761 active" onclick="location.href='{% url 'notice:franchise_list' %}'">
 {#            <i class="fas"></i></span>#}
         <a class="a_header" href="{% url 'notice:franchise_list' %}">
-            <span class="browser_title">공지사항</span>
+            <span class="browser_title">프랜차이즈</span>
         </a>
         </span>
 </div>
 
 <section class="writer">
-    <form method="POST" enctype="multipart/form-data>
+    <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
 {#        <h3>게시물 올리기</h3>#}
         <input type="text" class="inputwriter" value="{{ initial.title }}" placeholder="제목" name="title"><br>
         <textarea class="inputwriter" placeholder="내용"  name="content" style="height: 300px;
         margin-bottom: 20px;">{{ initial.content }}</textarea><br>
 {#        <p>{{notice.author_id }}</p><br>#}
+        <input type="file" name="photo" >
 
         <div class="bt-wrap clearfix bt-wrap-full">
             <button type="submit" class="btn  btn-block login-btn writerbtn" style="margin-top: 0px;">

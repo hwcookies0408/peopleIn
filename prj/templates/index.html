@@ -58,10 +58,18 @@
         {% endfor %}
     </ul>
 
+{#    <div class="notice_header">#}
+{#        <h5>프랜차이즈 창업 현황</h5>#}
+{#    </div>#}
+{#    <img style="width:100%" src="{% static '프차.png' %}">#}
     <div class="notice_header">
         <h5>프랜차이즈 창업 현황</h5>
     </div>
-    <img style="width:100%" src="{% static '프차.png' %}">
+    {% for notice in franchise_list %}
+        <a href="{% url 'notice:franchise_detail' pk=notice.id %}">
+    {% endfor %}
+        <img class="jimg" style="width:100%" src="{% static '프차.png' %}">
+    </a>
 </span>
 
 
