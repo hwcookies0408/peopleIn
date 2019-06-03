@@ -1,6 +1,6 @@
 import re
 
-
+from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render, redirect
 
 from django.views.generic import CreateView, UpdateView, DeleteView
@@ -19,11 +19,19 @@ def franchise_list(request):
                   {'franchise_list': qs})
 
 
+
 def notice_detail(request, pk):
     notice = get_object_or_404(Notice, pk=pk)
+    is_liked = False
+    if notice.likes.filter(id=request.user.id).exists():
+        is_liked = True
+    context = {
+        'notice': notice,
+        'is_liked': is_liked,
+        'total_likes': notice.total_likes(),
+    }
     return render(request, 'notice/notice_detail.html',
-                  {'notice': notice})
-
+                  context)
 
 def franchise_detail(request, pk):
     notice = get_object_or_404(Notice, pk=pk)
@@ -169,6 +177,17 @@ def franchise_remove(request, pk):
     notice.delete()
     return redirect('notice:franchise_list')
 
+
+def like_notice(request):
+    notice = get_object_or_404(Notice, id=request.POST.get('notice_id'))
+    is_liked = False
+    if notice.likes.filter(id=request.user.id).exists():
+        notice.likes.remove(request.user)
+        is_liked = False
+    else:
+        notice.likes.add(request.user)
+        is_liked = True
+    return HttpResponseRedirect(notice.get_absolute_url())
 
 
 

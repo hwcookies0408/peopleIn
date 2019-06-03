@@ -16,7 +16,6 @@
 
 
 <section style="padding-top: 0.5rem;">
-
     {% for notice in notice_list %}
         <a style="text-decoration: none;" href="{{ notice.get_absolute_url }}"> &nbsp;&nbsp;{{ notice.title }}</a><br>
                 <span class="name el nName" style="font-size: 13px;"> &nbsp;&nbsp;조회 {{ notice.hit }}	</span>
@@ -32,41 +31,7 @@
         <a href="{% url 'notice:notice_new' %}" style="color:#fff">글쓰기</a>
     </button>
 {% endif %}
-
-
-
 </section>
 
-    <nav aria-label="Page navigation">
-    <ul class="pagination">
-      {% if page_obj.has_previous %}
-        <li>
-          <a href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-      {% else %}
-        <li class="disabled"><span>&laquo;</span></li>
-      {% endif %}
-
-      {% for i in page_range %}
-        {% if page_obj.number == i %}
-          <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
-        {% else %}
-          <li><a href="?page={{ i }}">{{ i }}</a></li>
-        {% endif %}
-      {% endfor %}
-
-      {% if page_obj.has_next %}
-        <li>
-          <a href="?page={{ page_obj.next_page_number }}" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      {% else %}
-        <li class="disabled"><span>&raquo;</span></li>
-      {% endif %}
-    </ul>
-  </nav>
 
 {% endblock %}

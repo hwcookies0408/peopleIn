@@ -21,7 +21,7 @@
         <input type="text" class="inputwriter" value="{{ initial.title }}" placeholder="제목" name="title"><br>
         <textarea class="inputwriter" placeholder="내용"  name="content" style="height: 300px;
         margin-bottom: 20px;">{{ initial.content }}</textarea><br>
-        <input type="file" name="photo">
+        <input type="file" name="photo" value="">{{ initial.photo.url }}
 {#        <p>{{notice.author_id }}</p><br>#}
 
         <div class="bt-wrap clearfix bt-wrap-full">

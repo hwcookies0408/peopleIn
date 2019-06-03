@@ -15,13 +15,16 @@ class Notice(models.Model):
     #     settings.AUTH_USER_MODEL,  # 'auth.User'라고 쓰는 것보다 강추
     #     on_delete=models.CASCADE,
     #     related_name='notice',
-    #     verbose_name='게시자',
+    #     db_column='author',
+    #     default='',
+    #     null=False,
     # )
     title = models.CharField('제목', max_length=100, null=False)
     content = models.TextField('내용', null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     photo = models.ImageField(blank=True)
     hit = models.PositiveIntegerField(default=0)
+    likes = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='likes', blank=True)
 
     board_choices = (
         ('공지사항', '공지사항'),
@@ -32,6 +35,13 @@ class Notice(models.Model):
     )
 
     board = models.CharField(max_length=10, choices=board_choices, default='공지사항')
+
+
+
+    # 인스타 좋아요 총 수
+    def total_likes(self):
+        return self.likes.count()
+
 
     class Meta:
         ordering = ['-id']  # notice 객체의 기본 정렬 순서 지정

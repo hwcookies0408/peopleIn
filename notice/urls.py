@@ -17,4 +17,6 @@ urlpatterns = [
     path('franchise/new/', views.franchise_new, name='franchise_new'),  # 등록
     path('franchise/remove/<int:pk>/', views.franchise_remove, name='franchise_remove'),  # 삭제
     path('franchise/edit/<int:pk>/', views.franchise_edit, name='franchise_edit'),  # 수정
+
+    path('like/', views.like_notice, name='like_notice'),
 ]
