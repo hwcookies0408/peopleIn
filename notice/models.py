@@ -70,3 +70,21 @@ class Notice(models.Model):
     def get_absolute_url2(self):
         # return reverse('notice:notice_detail', args=[self.pk])
         return reverse('notice:franchise_detail', kwargs={'pk': self.pk}) # reverse 임포트 시켜주어야함.
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(Notice, on_delete=models.CASCADE,
+                             related_name='comments', verbose_name='게시물')
+    message = models.TextField('댓글')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-post__id', '-id']  # '-post__id', '-id'
+
+    def __str__(self):
+        return self.message
+
+    def updated(self):
+        return local_time(self.updated_at)
+    updated.short_description = '수정 일시'

@@ -74,7 +74,24 @@
     </form>
     {% endif %}
 </div>
+<br>
+    <br>
+    <h4>댓글</h4>
+<table>
 
+        <tbody>
+        {% for c in notice.comments.all %}
+            <tr>
+                <td>{{ c.id }}</td>
+                <td>{{ c.message }}</td>
+                <td>{{ c.created_at|date:"h:s" }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <br>
+        <textarea class="inputwriter" placeholder="댓글을 입력해주세요."  name="post"></textarea>
+        <button type="submit" class="btn btn-primary" style="margin-top: 5px; width: 60px">등록</button>
 
 
 {% endblock %}

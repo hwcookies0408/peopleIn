@@ -1,6 +1,6 @@
 # blog/admin.py
 from django.contrib import admin
-from .models import Notice
+from .models import Notice, Comment
 
 
 @admin.register(Notice)  # 아래 클래스가 Post 모델을 관리하는 클래스임
@@ -14,3 +14,10 @@ class NoticeAdmin(admin.ModelAdmin):
     list_display_links = ['id', 'title', ]
     list_filter = ['created_at']
     search_fields = ['title', 'content', ]
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    # list_display = ['id', 'post', 'message', 'updated_at', ]  # 바른 현지 시각
+    list_display = ['id', 'post', 'message', 'updated', ]
+    list_display_links = ['id', 'message', ]
