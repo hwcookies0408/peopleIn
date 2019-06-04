@@ -59,7 +59,7 @@
     <br>
 
 <div style="margin-left: 15px;">
-    {{ total_likes }}Like{{ total_likes|pluralize }}
+    {{ total_likes }}명이 좋아합니다.
 
     {% if request.user.is_authenticated %}
     <form action="{% url 'notice:like_notice' %}" method="post">
