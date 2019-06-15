@@ -1,0 +1,91 @@
+{% extends "base.html" %}                   <!--base.html을 상속받는다고 선언-->
+
+{% block title %}{% endblock %}    <!--title 블록 재정의-->
+
+<!--정적 파일인 css 연결하기 위하여, staticfiles를 로드-->
+{% load staticfiles %}
+<!--extrastyle 블록을 재정의하여 추가적으로 home.css 연결-->
+{% block extrastyle %}{% static "home.css" %}{% endblock %}
+
+{% block content %}
+
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<div id="container" style="min-width: 300px; height: 600px; margin: 0 auto"></div>
+
+<body>
+
+<script type="text/javascript">
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: '성동구 업소당 가구수'
+    },
+    subtitle: {
+        text: '출처: 소상공인마당'
+    },
+    xAxis: {
+        type: 'category',
+        labels: {
+            rotation: -45,
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '가구수'
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: '업소당 가구수: <b>{point.y} 가구</b>'
+    },
+  series: [{
+        name: 'Population',
+        data: [
+            ['금호1가동', 72],
+            ['성수2가3동', 14],
+            ['행당2동', 107],
+            ['왕십리도선동', 25],
+            ['행당1동', 30],
+            ['성수1가1동', 57],
+            ['응봉동', 168],
+            ['용답동', 32],
+            ['왕십리2동', 73],
+            ['금호4가동', 41],
+            ['금호2.3가동', 42],
+            ['송정동', 80],
+            ['사근동', 17],
+            ['옥수동', 54],
+            ['성수2가1동', 28],
+            ['마장동', 58],
+            ['성수1가2동', 27]
+        ],
+        dataLabels: {
+            enabled: true,
+            rotation: -90,
+            color: '#FFFFFF',
+            align: 'right',
+            format: '{point.y}', // one decimal
+            y: 10, // 10 pixels down from the top
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+            }
+        }
+    }]
+});
+</script>
+</body>
+
+{% endblock %}

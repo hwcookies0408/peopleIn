@@ -5,7 +5,7 @@ def analysis_list(request):
     return render(request, 'analysis/analysis_index.html')
 
 def analysis_people(request):
-    return render(request, 'analysis/jj.html')
+    return render(request, 'analysis/analysis_people.html')
 
 # 임시
 def analysis_sales(request):
