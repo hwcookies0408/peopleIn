@@ -1,32 +1,14 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<html>
-  <head>
-    <style>
-      rect.bordered {
-        stroke: #E6E6E6;
-        stroke-width:2px;
-      }
+{% extends "base.html" %}                   <!--base.html을 상속받는다고 선언-->
 
-      text.mono {
-        font-size: 9pt;
-        font-family: Consolas, courier;
-        fill: #aaa;
-      }
+{% block title %}{% endblock %}    <!--title 블록 재정의-->
 
-      text.axis-workweek {
-        fill: #000;
-      }
+<!--정적 파일인 css 연결하기 위하여, staticfiles를 로드-->
+{% load staticfiles %}
+<!--extrastyle 블록을 재정의하여 추가적으로 home.css 연결-->
+{% block extrastyle %}{% static "home.css" %}{% endblock %}
 
-      text.axis-worktime {
-        fill: #000;
-      }
+{% block content %}
 
-      h1 {
-        padding-left: 30px;
-        color: #618c03;
-      }
-    </style>
     <script src="http://d3js.org/d3.v3.js"></script>
   </head>
   <body>
@@ -147,4 +129,5 @@
         });
     </script>
   </body>
-</html>
+
+{% endblock %}

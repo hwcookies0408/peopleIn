@@ -1,0 +1,89 @@
+{% extends "base.html" %}                   <!--base.html을 상속받는다고 선언-->
+
+{% block title %}{% endblock %}    <!--title 블록 재정의-->
+
+<!--정적 파일인 css 연결하기 위하여, staticfiles를 로드-->
+{% load staticfiles %}
+<!--extrastyle 블록을 재정의하여 추가적으로 home.css 연결-->
+{% block extrastyle %}{% static "home.css" %}{% endblock %}
+
+{% block content %}
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<br>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<table id="datatable">
+    <thead>
+        <tr>
+            <th></th>
+            <th>2018년 상반기</th>
+            <th>2018년 하반기</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>한식</th>
+            <td>3533</td>
+            <td>3880</td>
+        </tr>
+        <tr>
+            <th>양식</th>
+            <td>4258</td>
+            <td>4302</td>
+        </tr>
+        <tr>
+            <th>닭</th>
+            <td>3864</td>
+            <td>3946</td>
+        </tr>
+        <tr>
+            <th>패스트푸드</th>
+            <td>3917</td>
+            <td>4412</td>
+        </tr>
+        <tr>
+            <th>일식</th>
+            <td>3943</td>
+            <td>4163</td>
+        </tr>
+    </tbody>
+</table>
+<body>
+<script type="text/javascript">
+
+Highcharts.chart('container', {
+    data: {
+        table: 'datatable'
+    },
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: '서울 성동구 음식 업종별 매출통계'
+    },
+    yAxis: {
+        allowDecimals: false,
+        title: {
+            text: '월평균매출액 : 만원'
+        }
+    },
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.series.name + '</b><br/>' +
+                this.point.y + '만원';
+        }
+    }
+});
+</script>
+</body>
+
+  {% endblock content %}
+
+  {% block footer %}                      <!--footer 블록 재정의-->
+
+  {% endblock footer %}

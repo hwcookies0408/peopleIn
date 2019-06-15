@@ -24,8 +24,13 @@ class Profile(models.Model):
         (MAPO, '마포구'),
         (SONGPA, '송파구')
     )
+    GENDER = (
+        ('male', 'male'),
+        ('female', 'female'),
+    )
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     birthdate = models.DateField(null=True, blank=True, verbose_name='birthdate')
+    gender = models.CharField(max_length=7, choices=GENDER, default='')
     in_area = models.PositiveSmallIntegerField(choices=AREA_CHOICES, null=True, blank=True, verbose_name='in_area')
     # in_job = models.CharField(max_length=10, verbose_name='관심업종')
     phone = models.CharField(max_length=20, null=True, verbose_name='phone')
